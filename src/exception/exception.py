@@ -1,6 +1,6 @@
 import sys
 
-class Credit_Risk(Exception):
+class Credit_Risk_Exception(Exception):
 
     def __init__(self,error_message,error_detials:sys):
         self.error_message=error_message
