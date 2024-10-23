@@ -41,7 +41,7 @@ class DataIngestion:
             df = pd.DataFrame(data)
 
             if "_id" in df.columns:
-                df = df.drop(columns=["_id"], axis=1)
+                df = df.drop(columns=["_id","id"], axis=1)
                 df.replace({"na": pd.NA}, inplace=True)
 
             logging.info("Exported data from collection into DataFrame.")

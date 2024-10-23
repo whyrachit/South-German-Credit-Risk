@@ -1,0 +1,50 @@
+columns:
+ status: object
+ duration: int64
+ credit_history: object
+ purpose: object
+ amount: int64
+ savings: object
+ employment_duration: object
+ installment_rate: object
+ personal_status_sex: object
+ other_debtors: object
+ present_residence: object
+ property: object
+ age: int64
+ other_installment_plans: object
+ housing: object
+ number_credits: object
+ job: object
+ people_liable: object
+ telephone: object
+ foreign_worker: object
+ credit_risk: object
+
+numerical_columns:
+ -duration
+ -amount
+ -age
+
+categorical_coulmns:
+ -status
+ -credit_history
+ -purpose
+ -savings
+ -employment_duration
+ -installment_rate
+ -personal_status_sex
+ -other_debtors
+ -present_residence
+ -property
+ -other_installment_plans
+ -housing
+ -number_credits
+ -job
+ -people_liable
+ -telephone
+ -foreign_worker
+ -credit_risk
+ 
+
+
